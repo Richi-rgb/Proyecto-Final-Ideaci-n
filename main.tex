@@ -13,15 +13,15 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Título del trabajo}
-            
+        \textbf{Ideación Proyecto Final}
+
         \vspace{0.5cm}
         \LARGE
-        Subtítulo
+        I'm Alive
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{Sergio Alberto Giraldo Salazar y Ricardo Echeverri Cano}
             
         \vfill
             
@@ -38,69 +38,36 @@
 
 \tableofcontents
 \newpage
-\section{Sección introductoria}\label{intro}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
+\section{Idea del Juego}\label{idea}
+El juego va a tratar de un androide el cual desarrollo conciencia propia y desea vivir una vida como un ser autónomo e independiente, para lograr su sueño debe escapar del laboratorio donde fue creado, ya que fue creado para ser un arma de destrucción.
+\cite{Alaluzdeunabombilla}
 
-\section{Sección de contenido} \label{contenido}
-Esta sección es para agregar toda la información correspondiente con código, citas, etc.
-\subsection{Citación}
-Vamos a citar por ejemplo un artículo de \textbf{Albert Einstein} \cite{einstein}.
-También es posible citar libros \cite{dirac} o documentos en línea \cite{knuthwebsite}.\\\\
-Revisar en la última sección el formato de las referencias en IEEE.
+\section{Personajes Principales} \label{personajes}
+\begin{itemize}
+    \item Androide (personaje principal).
+    \item Segundo Androide (sólo si es multijugador).
+\end{itemize}
 
-\subsection{Incluir código en el documento}
-%
-A continuación, se presenta el código \ref{codigo_ejemplo}, que nos permite incluir en el informe partes de programa que requieran una explicación adicional.
-\begin{lstlisting}[language=C++, label=codigo_ejemplo]
-// Programa desarrollado, compilado y ejecutado en https://www.onlinegdb.com
-#include <iostream>
+\section{Enemigos}\label{enemigos}
+\begin{itemize}
+    \item Soldados: Estos enemigos atacaran al personaje bajando su barra de vida.
+    \item Científicos: Estos se deben de evitar ya que si ven al personaje llamaran a un grupo de soldados.
+\end{itemize}
 
-/*
- * Esto es un comentario de varias lineas
- */
+\section{Mapa}\label{mapa}
+El juego va a contar con un mapa de un laboratorio subterráneo, el cual estará dividido en 5 niveles que serían los 5 pisos del laboratorio, y para poder avanzar de nivel deberá cumplir con las respectivas misiones asignadas en cada uno o matar a los enemigos que sean necesarios.
 
-// Comentario de una sola linea
+\section{Modo de Juego}\label{modo}
+\begin{itemize}
+    \item \textbf{Perspectiva:} Cuarta persona.
+    \item \textbf{Modo de combate:} Disparar proyectiles los cuales se detienen hasta que impacten un soldado o un muro, esquivar los proyectiles de los soldados y evitar el campo de visión de los científicos, conseguir las tarjetas para poder abrir las puertas.
+\end{itemize}
 
-#define N 10
+\section{Nivel de Dificultad}\label{dificultad}
+La dificultad ira aumentando junto con los niveles. Esto se hará incrementando la cantidad de enemigos, cadencia de fuego y punto de vida de los enemigos.
 
-using namespace std;
-
-int main()
-{
-    
-    for( int i = 0 ; i < N ; i++ ){
-        
-        if( !(i % 2) )
-            cout << " El valor de i es -> " << i << endl;
-    }
-    
-    return 0;
-}
-
-//Resultado programa
-
-/*
-El valor de i es -> 0
-El valor de i es -> 2
-El valor de i es -> 4
-El valor de i es -> 6
-El valor de i es -> 8
-*/
-\end{lstlisting}
-En la sección \ref{imagenes}, se presentará como añadir ilustraciones al texto.
-
-\section{Inclusión de imágenes} \label{imagenes}
-
-En la Figura (\ref{fig:cpplogo}), se presenta el logo de C++ contenido en la carpeta images.
-
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
-
-Las secciones (\ref{intro}), (\ref{contenido}) y (\ref{imagenes}) dependen del estilo del documento.
+\section{Gráficos}\label{gráficos}
+Se definirán al avanzar el curso.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
